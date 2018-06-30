@@ -1,21 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Login from "./components/pages/login";
+import Home from "./components/pages/Home";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import NewUser from "./components/pages/NewUser.js";
+import CreateTeam from "./components/pages/CreateTeam";
+import JoinTeam from "./components/pages/JoinTeam";
+import Play from "./components/pages/Play";
+import Nav from "./components/Nav";
+import "./components/Nav.css";
+//import Upload from "./components/pages/Upload";
+//<Route exact path="/Upload" component={Upload} />
+//
+import "./components/Nav.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
-
+const App = () => 
+<Router>
+  
+    <div>
+    <Nav />
+      <Route exact path="/" component={Login} />
+      <Route exact path="/Home" component={Home} />
+      <Route exact path="/new" component={NewUser} />
+      <Route exact path="/CreateTeam" component={CreateTeam} />
+      <Route exact path="/JoinTeam" component={JoinTeam} />
+      <Route exact path="/Play" component={Play} />
+      
+  
+    </div>
+  </Router>;
 export default App;
