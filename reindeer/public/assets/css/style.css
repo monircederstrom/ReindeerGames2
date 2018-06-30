@@ -1,0 +1,48 @@
+body {
+    background: url("../images/background.jpeg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+}
+#loginchoice {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#want {
+	text-align: center;
+	color: white;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#teamCreateButton {
+	width: 86%;
+	height: 20%;
+	margin-left: 7%;
+	margin-right: 7%;
+	background-color: #F7C243;
+}
+#joinTeamButton {
+	width: 86%;
+	height: 20%;
+	margin-left: 7%;
+	margin-right: 7%;
+	background-color: #F7C243;
+}
+#loginbutton {
+	width: 86%;
+	height: 20%;
+	margin-left: 7%;
+	margin-right: 7%;
+	background-color: #F7C243;
+}
+#form {
+	width: 60%;
+	height: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F7C243;
+   }

@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Login from "./components/pages/login";
+import NewUser from "./components/pages/NewUser";
+import Home from "./components/pages/Home";
+import Join from "./components/pages/JoinTeam";
+import Create from "./components/pages/CreateTeam";
+import Play from "./components/pages/Play";
+import Nav from "./components/Nav"
+//import Camera from "./components/pages/camera";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
 
+const App = () =>
+  <Router>
+    <div>
+      <Nav />
+      <Route exact path="/" component={Login} />
+      <Route exact path="/new" component={NewUser} />
+      <Route exact path="/home" component={Home} />
+      <Route exact path="/join" component={Join} />
+      <Route exact path="/create" component={Create} />
+      <Route exact path="/play" component={Play} />
+      {/* <Route exact path="/camera" component={Camera} /> */}
+      
+    </div>
+  </Router>;
 export default App;
