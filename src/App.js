@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Login from "./components/pages/login";
-import NewUser from "./components/pages/NewUser";
+import Login from "./components/pages/Login";
+import SignUp from "./components/pages/SignUp";
 import Home from "./components/pages/Home";
 import Join from "./components/pages/JoinTeam";
 import Create from "./components/pages/CreateTeam";
@@ -15,7 +15,7 @@ const App = () =>
     <div>
       <Nav />
       <Route exact path="/" component={Login} />
-      <Route exact path="/new" component={NewUser} />
+      <Route exact path="/new" component={SignUp} />
       <Route exact path="/home" component={Home} />
       <Route exact path="/join" component={Join} />
       <Route exact path="/create" component={Create} />
