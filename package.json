@@ -10,6 +10,7 @@
     "mongojs": "^2.6.0",
     "mongoose": "^5.2.0",
     "nodemon": "^1.17.5",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-countdowntimer": "^0.1.8",
     "react-dom": "^16.4.1",
