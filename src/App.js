@@ -7,7 +7,7 @@ import Join from "./components/pages/JoinTeam";
 import Create from "./components/pages/CreateTeam";
 import Play from "./components/pages/Play";
 import Nav from "./components/Nav"
-//import Camera from "./components/pages/camera";
+import Webcam from "./components/pages/camera";
 
 
 const App = () =>
