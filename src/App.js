@@ -20,7 +20,7 @@ const App = () =>
       <Route exact path="/join" component={Join} />
       <Route exact path="/create" component={Create} />
       <Route exact path="/play" component={Play} />
-      {/* <Route exact path="/camera" component={Camera} /> */}
+      <Route exact path="/camera" component={Webcam} />
       
     </div>
   </Router>;
