@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
+
+
 const PORT = process.env.PORT || 3001;
 
 // Define middleware here
@@ -12,11 +14,13 @@ app.use(bodyParser.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
 // Add routes, both API and view
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb:cebpritchett:0okm9ijn)OKM(IJN@ds123971.mlab.com:23971/reindeer_db";
+mongoose.connect(MONGODB_URI);
 
 // Start the API server
 app.listen(PORT, function() {

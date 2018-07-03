@@ -7,7 +7,7 @@ const Container = props => (
   <main className="container">{props.children}>
   
       <p>
-      Explanation of what Reindeer Games is...
+      
       </p>
     
       <img className="movingcar" src="assets/images/largelogo1.png" alt="Smiley face" />

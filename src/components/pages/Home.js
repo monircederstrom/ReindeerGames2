@@ -29,6 +29,11 @@ class Home extends Component {
        
         
           <CurrentGames />
+          <div id="navbuttons">
+              <a href="/create" className="waves-effect waves-light btn" id="create">Create Game</a>
+      
+              <a href="/join" className="waves-effect waves-light btn" id="join">Join Game</a>
+          </div>
           
         </div>
       );
