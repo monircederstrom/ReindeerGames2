@@ -1,43 +1,41 @@
-import React, { Component } from "react";
-import Nav from "../Nav";
+import React from "react";
 import CurrentGames from "./CurrentGames";
+import "./Container.css";
 
 
-class Home extends Component {
-  //  state = {
-  //    response: []
-  //  }
-
-  //   componentDidMount(){
-  //    fetch("/api/test").then( data => data.json() ).then((data) => {
-  //      this.setState({
-  //        response: data
-  //      })
-  //    })
-  //   }
-
-    // renderList = () => {
-    //   console.log(this.state.response)
-    //   return this.state.response.map(item => <div key={item.username}>{item.username}</div>)
-    // }
-    
-    render() {
-      return (
-        <div>
-          
-         {/* { this.renderList() } */}
-       
-        
-          <CurrentGames />
-          <div id="navbuttons">
-              <a href="/create" className="waves-effect waves-light btn" id="create">Create Game</a>
-      
-              <a href="/join" className="waves-effect waves-light btn" id="join">Join Game</a>
-          </div>
-          
-        </div>
-      );
-    }
-  }
+const main = props => (
+ 
+  <div className="main-container">{props.children}
+      <p>
+      Explanation of what Reindeer Games is...
+      </p>
+      <CurrentGames>
+    </CurrentGames>
   
-  export default Home;
+          
+  </div>
+  )
+
+
+  // nav bar 
+
+//materialize   to add to file    <!--
+ // Sizes:
+ // tiny: 1rem
+ // small: 2rem
+ // medium: 4rem
+ // large: 6rem
+  -->
+  //<i class="large material-icons">insert_chart</i>
+
+// collections  ,   file_download, file_upload   home
+//thumbs_up_down  
+
+
+//add to html code    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+// 
+
+
+  export default main;
