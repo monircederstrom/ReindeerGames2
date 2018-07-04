@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-//import { withRouter } from 'react-router-dom';
-import { auth } from '../../firebase';
-
+import { withRouter } from 'react-router-dom';
+import { auth } from '../../firebase/index';
+import * as routes from '../../constants/routes';
 
 const SignInPage = ({ history }) =>
   <div>
@@ -10,7 +10,7 @@ const SignInPage = ({ history }) =>
  
   </div>
 
-const byPropKey = (propertyName, value) => () => ({
+const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value,
 });
 
@@ -40,11 +40,11 @@ class SignInForm extends Component {
       auth.doSignInWithEmailAndPassword(email, password)
         .then(() => {
           this.setState(() => ({ ...INITIAL_STATE }));
-          history.push('/home');
+          history.push(routes.HOME);
         })
         .catch(error => {
-          this.setState(byPropKey('error', error));
-        });
+          this.setState(updateByPropertyName('error', error));
+      });
   
       event.preventDefault();
     }
@@ -61,35 +61,36 @@ class SignInForm extends Component {
         email === '';
   
       return (
-        <div>
+        
         <form onSubmit={this.onSubmit} className="col s12" id="form">
           <div className="row">
-              <div className="input-field col s12">
-                <input value={email} onChange={event => this.setState(byPropKey('email', event.target.value))} id="email" type="email" className="validate" />
-                <label htmlFor="email">Your Email</label>
-              </div>
+            <div className="input-field col s12">
+              <input value={email} onChange={event => this.setState(updateByPropertyName('email', event.target.value))} id="email" type="email" className="validate" />
+              <label htmlFor="email">Your Email</label>
             </div>
+          </div>
           
-            <div className="row">
-              <div className="input-field col s12">
-                <input value={password} onChange={event => this.setState(byPropKey('password', event.target.value))} id="password" type="password" className="validate" />
-                <label htmlFor="password"> Your Password</label>
-              </div>
+          <div className="row">
+            <div className="input-field col s12">
+              <input value={password} onChange={event => this.setState(updateByPropertyName('password', event.target.value))} id="password" type="password" className="validate" />
+              <label htmlFor="password"> Your Password</label>
             </div>
-            <div id="loginbuttons">
-                <button disabled={isInvalid} type="submit" className="waves-effect waves-light btn" id="login">Login</button>
+          </div>
+          <div id="loginbuttons">
+              <button disabled={isInvalid} type="submit" className="waves-effect waves-light btn" id="login">Login</button>
+              { error && <p>{error.message}</p> }
+              <a href="/new" className="waves-effect waves-light btn" id="newuser">New User</a>
         
-                <a href="/new" className="waves-effect waves-light btn" id="newuser">New User</a>
-            
-            { error && <p>{error.message}</p> }
-            </div>
-          </form>
-      
-      </div>
-      )  
+          </div>
+        </form>
 
+      );
     }
   }
-  
-  export default SignInPage;
+
+  export default withRouter(SignInPage);
+
+  export {
+    SignInForm,
+  }
   

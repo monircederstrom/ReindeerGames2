@@ -1,12 +1,12 @@
 import React from 'react';
-import AuthUserContext from '../Session/AuthUserContext';
-import { auth } from '../../firebase';
+import { auth } from '../../firebase/index';
 
 const SignOutButton = () =>
 
-  <button
+  <button 
     type="button"
     onClick={auth.doSignOut}
+    className="waves-effect waves-light btn"
   >
     Sign Out
   </button>

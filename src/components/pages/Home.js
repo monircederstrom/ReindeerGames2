@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import SignOutButton from './SignOut'
 import CurrentGames from "./CurrentGames";
 
 
@@ -24,12 +24,13 @@ class HomePage extends Component {
     render() {
       return (
         <div>
-          
+          <div>
          {/* { this.renderList() } */}
        
         
           <CurrentGames />
-          
+          </div>
+          <SignOutButton />
         </div>
       );
     }
