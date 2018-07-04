@@ -1,13 +1,13 @@
   
   .navbar {
     border-radius: 6px; 
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     background: palegreen;
 }
 
 .Countdown{
   margin: 10px auto;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .Countdown-col{
@@ -16,11 +16,11 @@
 
 .Countdown-col-element{
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 200px;
   display: flex;
   flex-direction: column;
 }
 
 .Countdown-col-element strong{
-  font-size: 50px;
+  font-size: 190px;
 }
