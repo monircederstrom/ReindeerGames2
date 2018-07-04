@@ -7,7 +7,7 @@ import Join from "./components/pages/JoinTeam";
 import Create from "./components/pages/CreateTeam";
 import Play from "./components/pages/Play";
 import Nav from "./components/Nav"
-//import Camera from "./components/pages/camera";
+import Camera from "./components/pages/camera2";
 
 
 const App = () =>
@@ -20,7 +20,7 @@ const App = () =>
       <Route exact path="/join" component={Join} />
       <Route exact path="/create" component={Create} />
       <Route exact path="/play" component={Play} />
-      {/* <Route exact path="/camera" component={Camera} /> */}
+      <Route exact path="/camera" component={Camera} /> 
       
     </div>
   </Router>;
