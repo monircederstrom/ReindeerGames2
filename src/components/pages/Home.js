@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0baa7f3f09261109c5c6cb639737415650a2d540
 import CurrentGames from "./CurrentGames";
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0baa7f3f09261109c5c6cb639737415650a2d540
 class HomePage extends Component {
   //  state = {
   //    response: []
@@ -29,15 +35,52 @@ class HomePage extends Component {
        
         
           <CurrentGames />
-          <div id="navbuttons">
-              <a href="/create" className="waves-effect waves-light btn" id="create">Create Game</a>
-      
-              <a href="/join" className="waves-effect waves-light btn" id="join">Join Game</a>
-          </div>
           
         </div>
       );
     }
   }
   
+<<<<<<< HEAD
   export default HomePage;
+=======
+  export default HomePage;
+=======
+const main = props => (
+ 
+  <div className="main-container">{props.children}
+      <p>
+      Explanation of what Reindeer Games is...
+      </p>
+      <CurrentGames>
+    </CurrentGames>
+  
+          
+  </div>
+  )
+
+
+  // nav bar 
+
+//materialize   to add to file    <!--
+ // Sizes:
+ // tiny: 1rem
+ // small: 2rem
+ // medium: 4rem
+ // large: 6rem
+  -->
+  //<i class="large material-icons">insert_chart</i>
+
+// collections  ,   file_download, file_upload   home
+//thumbs_up_down  
+
+
+//add to html code    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+// 
+
+
+  export default main;
+
+>>>>>>> 0baa7f3f09261109c5c6cb639737415650a2d540
