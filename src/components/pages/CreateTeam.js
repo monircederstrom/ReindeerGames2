@@ -4,6 +4,10 @@ import React from "react";
 let teamnumber = Math.floor(Math.random() * 9);
 console.log(teamnumber);
 
+const createGame = () => {
+        
+}
+
 const CreateTeam = props => (
     <main className="createteamcontainer">{props.children} >
             
