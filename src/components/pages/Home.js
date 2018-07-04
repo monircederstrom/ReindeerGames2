@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SignOutButton from './SignOut'
 import CurrentGames from "./CurrentGames";
-
+import "./Container.css";
 
 class HomePage extends Component {
   //  state = {
@@ -27,10 +27,10 @@ class HomePage extends Component {
           <div>
          {/* { this.renderList() } */}
        
-        
+         <SignOutButton />
           <CurrentGames />
           </div>
-          <SignOutButton />
+         
         </div>
       );
     }

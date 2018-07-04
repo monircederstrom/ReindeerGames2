@@ -5,8 +5,8 @@ class JoinTeam extends Component {
     render() {
         return (
             <div>
-                
-                <p> Join team stuff here </p>
+                 <h1> Enter Team Name: </h1>
+
             </div>
         );
     }
