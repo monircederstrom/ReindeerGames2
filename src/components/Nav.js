@@ -1,5 +1,5 @@
 import React from "react";
-
+import SignOutButton from './pages/SignOut';
 import "./Nav.css";
 
 // Component for the Navbar
@@ -18,6 +18,7 @@ const Nav = props => (
         </a>
         
       </div>
+      <li><SignOutButton /></li>
     </nav>
   </div>
 );
