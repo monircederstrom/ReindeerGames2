@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Nav from "../Nav";
+import React, { Component } from 'react';
+
 import CurrentGames from "./CurrentGames";
 
 
-class Home extends Component {
+class HomePage extends Component {
   //  state = {
   //    response: []
   //  }
@@ -40,4 +40,4 @@ class Home extends Component {
     }
   }
   
-  export default Home;
+  export default HomePage;
