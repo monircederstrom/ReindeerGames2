@@ -1,7 +1,7 @@
 import React from "react";
-import SignOutButton from './pages/SignOut';
+//import SignOutButton from './pages/SignOut';
 import "./Nav.css";
-
+//<li><SignOutButton /></li>
 // Component for the Navbar
 //document.addEventListener('DOMContentLoaded', function() {
   //  var elems = document.querySelectorAll('.sidenav');
@@ -18,7 +18,7 @@ const Nav = props => (
         </a>
         
       </div>
-      <li><SignOutButton /></li>
+      
     </nav>
   </div>
 );

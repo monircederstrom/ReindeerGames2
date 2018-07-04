@@ -2,11 +2,12 @@ import React, { Component } from "react";
 //import { withRouter } from 'react-router-dom';
 import { auth } from '../../firebase';
 
+
 const SignInPage = ({ history }) =>
   <div>
   
     <SignInForm history={history} />
-  
+ 
   </div>
 
 const byPropKey = (propertyName, value) => () => ({
@@ -65,24 +66,25 @@ class SignInForm extends Component {
           <div className="row">
               <div className="input-field col s12">
                 <input value={email} onChange={event => this.setState(byPropKey('email', event.target.value))} id="email" type="email" className="validate" />
-                <label for="email">Your Email</label>
+                <label htmlFor="email">Your Email</label>
               </div>
             </div>
           
             <div className="row">
               <div className="input-field col s12">
                 <input value={password} onChange={event => this.setState(byPropKey('password', event.target.value))} id="password" type="password" className="validate" />
-                <label for="password"> Your Password</label>
+                <label htmlFor="password"> Your Password</label>
               </div>
             </div>
+            <div id="loginbuttons">
+                <button disabled={isInvalid} type="submit" className="waves-effect waves-light btn" id="login">Login</button>
+        
+                <a href="/new" className="waves-effect waves-light btn" id="newuser">New User</a>
             
             { error && <p>{error.message}</p> }
+            </div>
           </form>
-      <div id="loginbuttons">
-          <button disabled={isInvalid} type="submit" className="waves-effect waves-light btn" id="login">Login</button>
-  
-          <a href="/new" className="waves-effect waves-light btn" id="newuser">New User</a>
-      </div>
+      
       </div>
       )  
 
@@ -90,6 +92,4 @@ class SignInForm extends Component {
   }
   
   export default SignInPage;
-  export {
-    SignInForm,
-  };
+  
