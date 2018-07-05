@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Nav from "../Nav";
+import React, { Component } from 'react';
+import SignOutButton from './SignOut'
 import CurrentGames from "./CurrentGames";
+import "./Container.css";
 
-
-class Home extends Component {
+class HomePage extends Component {
   //  state = {
   //    response: []
   //  }
@@ -24,20 +24,16 @@ class Home extends Component {
     render() {
       return (
         <div>
-          
+          <div>
          {/* { this.renderList() } */}
        
-        
+         <SignOutButton />
           <CurrentGames />
-          <div id="navbuttons">
-              <a href="/create" className="waves-effect waves-light btn" id="create">Create Game</a>
-      
-              <a href="/join" className="waves-effect waves-light btn" id="join">Join Game</a>
           </div>
-          
+         
         </div>
       );
     }
   }
   
-  export default Home;
+  export default HomePage;
