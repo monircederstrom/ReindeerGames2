@@ -4,22 +4,22 @@ import CurrentGames from "./CurrentGames";
 import "./Container.css";
 
 class HomePage extends Component {
-  //  state = {
-  //    response: []
-  //  }
+//    state = {
+//      response: []
+//    }
+// //use axios here//
+//     componentDidMount(){
+//      fetch("/api/allGames").then( data => data.json() ).then((data) => {
+//        this.setState({
+//          response: data
+//        })
+//      })
+//     }
 
-  //   componentDidMount(){
-  //    fetch("/api/test").then( data => data.json() ).then((data) => {
-  //      this.setState({
-  //        response: data
-  //      })
-  //    })
-  //   }
-
-    // renderList = () => {
-    //   console.log(this.state.response)
-    //   return this.state.response.map(item => <div key={item.username}>{item.username}</div>)
-    // }
+//     renderList = () => {
+//       console.log(this.state.response)
+//       return this.state.response.map(item => <div key={item.username}>{item.username}</div>)
+//     }
     
     render() {
       return (
