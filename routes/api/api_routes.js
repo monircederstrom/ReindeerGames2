@@ -25,13 +25,13 @@ router
 // Route to display all games in which the user is a participant
 router
   .route("/game/allGames")
-  .post(gamesController.findAllGames);
+  .get(gamesController.findAllGames);
   // .post(gamesController.create);
 
 //route to display details of a specific game
 router
   .route("/game/:id")
-  .post(gamesController.findGameById);
+  .get(gamesController.findGameById);
 
 //this route updates score and photos
 router
