@@ -9,7 +9,7 @@ const gameSchema = new Schema({
     {
       name: { type: String, required: true, default: this.creator },
       score: { type: Number, default: 0 },
-      photos: //something to do with GridFS, files, and chunks. is this doable?
+      //photos: //something to do with GridFS, files, and chunks. is this doable?
     }
   ],
   startDate: { type: Date },
