@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Nav from "../Nav";
+import React, { Component } from 'react';
+import SignOutButton from './SignOut'
 import CurrentGames from "./CurrentGames";
+import "./Container.css";
 
-
-class Home extends Component {
+class HomePage extends Component {
   //  state = {
   //    response: []
   //  }
@@ -23,21 +23,22 @@ class Home extends Component {
     
     render() {
       return (
-        <div>
-          
-         {/* { this.renderList() } */}
-       
+        <div className="col s12" id="home">
+         
+           
+              <h4 id="subhome">Your Current Games</h4>
+              <CurrentGames />
+              {/* { this.renderList() } */}
+              <a href="/create" className="waves-effect waves-light btn" id="newuser">Create New Team</a>
+              <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Team</a>
         
-          <CurrentGames />
-          <div id="navbuttons">
-              <a href="/create" className="waves-effect waves-light btn" id="create">Create Game</a>
-      
-              <a href="/join" className="waves-effect waves-light btn" id="join">Join Game</a>
-          </div>
+              <SignOutButton />
+           
           
+         
         </div>
       );
     }
   }
   
-  export default Home;
+  export default HomePage;
