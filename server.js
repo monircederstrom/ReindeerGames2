@@ -4,8 +4,14 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 
+//Wendy added Morgan to track database input
+const logger = require("morgan");
 
 const PORT = process.env.PORT || 3001;
+
+
+//Wendy added Morgan to track database input
+app.use(logger("dev"));
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
