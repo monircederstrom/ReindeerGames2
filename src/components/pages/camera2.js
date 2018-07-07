@@ -35,6 +35,9 @@ export default class Webcam extends Component {
             this.img = img;
           }}
         />
+          <div id="navbuttons">
+              <a className="btn-floating btn-large waves-effect waves-light red white-text center-align" id="save">save</a>
+          </div>
       </div>
     );
   }
