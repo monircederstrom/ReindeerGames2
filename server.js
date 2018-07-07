@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3001;
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -19,7 +20,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb:cebpritchett:0okm9ijn)OKM(IJN@ds123971.mlab.com:23971/reindeer_db";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://cebpritchett:0okm9ijn)OKM(IJN@ds123971.mlab.com:23971/reindeer_db";
 mongoose.connect(MONGODB_URI);
 
 // Start the API server
