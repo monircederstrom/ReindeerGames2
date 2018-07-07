@@ -23,13 +23,18 @@ class HomePage extends Component {
     
     render() {
       return (
-        <div>
-          <div>
-         {/* { this.renderList() } */}
-       
-         <SignOutButton />
-          <CurrentGames />
-          </div>
+        <div className="col s12" id="home">
+         
+           
+              <h4 id="subhome">Your Current Games</h4>
+              <CurrentGames />
+              {/* { this.renderList() } */}
+              <a href="/create" className="waves-effect waves-light btn" id="newuser">Create New Team</a>
+              <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Team</a>
+        
+              <SignOutButton />
+           
+          
          
         </div>
       );
