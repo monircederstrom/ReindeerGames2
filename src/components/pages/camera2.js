@@ -47,8 +47,9 @@ const style = {
   preview: {
     position: 'relative',
     width: '100%',
+   
     justifyContent: 'center',
-    
+    paddingTop: 100
   },
   captureContainer: {
     display: 'flex',
@@ -65,7 +66,7 @@ const style = {
     width: 26,
     color: '#000',
     justifyContent: 'center',
-    margin: 50,
+  
     
   },
   captureImage: {
