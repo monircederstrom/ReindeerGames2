@@ -43,6 +43,9 @@ export default class Webcam extends Component {
 const style = {
   preview: {
     position: 'relative',
+    width: '100%',
+    justifyContent: 'center',
+    
   },
   captureContainer: {
     display: 'flex',
@@ -50,14 +53,15 @@ const style = {
     justifyContent: 'center',
     zIndex: 1,
     bottom: 0,
-    width: '100%'
+    width: '50%'
   },
   captureButton: {
     backgroundColor: '#fff',
     borderRadius: '50%',
-    height: 56,
-    width: 56,
+    height: 26,
+    width: 26,
     color: '#000',
+    justifyContent: 'center',
     margin: 20
   },
   captureImage: {
