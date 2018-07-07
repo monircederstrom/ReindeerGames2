@@ -36,7 +36,7 @@ export default class Webcam extends Component {
           }}
         />
           <div id="navbuttons">
-              <a className="btn-floating btn-large waves-effect waves-light red white-text center-align" id="save">save</a>
+          <a className="waves-effect waves-light btn red white-text center-align " id="save">save this pic!</a>
           </div>
       </div>
     );
@@ -65,7 +65,8 @@ const style = {
     width: 26,
     color: '#000',
     justifyContent: 'center',
-    margin: 20
+    margin: 50,
+    
   },
   captureImage: {
     width: '100%',
