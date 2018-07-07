@@ -1,12 +1,8 @@
-import React from "react";
+import React, { Component } from 'react';
 //import "./Container.css";
+import { Link, withRouter } from 'react-router-dom';
+let teamnumber = Math.floor(Math.random() * 1000000000);
 
-let teamnumber = Math.floor(Math.random() * 9);
-console.log(teamnumber);
-
-const createGame = () => {
-        
-}
 
 const CreateTeam = props => (
     <main className="createteamcontainer">{props.children} >
@@ -15,15 +11,19 @@ const CreateTeam = props => (
                 <div className="row">
                     <div className="input-field col s6">
                         <input id="team_name" type="text" className="validate" />
-                        <label for="team_name">Team Name</label>
+                        <label htmlFor="team_name">Team Name</label>
                     </div>
                 </div>
                 <div className="row">
                     <h4>Your unique team number is:  {teamnumber}</h4> 
+         
+                    
+                    <Link to="/home" className="waves-effect waves-light btn" id="login">Create My Team</Link>
+                   
                 </div>
             </form>
        
     </main>
 
 )
-export default CreateTeam;
+export default withRouter(CreateTeam);
