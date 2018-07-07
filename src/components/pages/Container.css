@@ -16,10 +16,20 @@ p {
   background-color: white;
   margin-top: 5%;
 }
+#home {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  margin-top: -6%;
+}
 #login {
   background: #F7C243;
   margin: 2%;
  
+}
+#subhome{
+  padding-top: 30%;
 }
 #newuser {
   background: #F7C243;
