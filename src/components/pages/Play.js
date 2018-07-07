@@ -38,12 +38,17 @@ class Play extends Component {
         const currentDate = new Date();
         const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
              return (
-                <div className="">
+                <div className="play">
             
+                   
+                    <h3 className="title white-text center-align"> Current Challenge Ends:</h3> 
+                    <h4 className=" white-text center-align">  <Countdown  date ={`${year}-07-08T00:00:00`} /></h4>
                     <Header currentScore={this.state.currentScore} Time={this.state.time}/>  
-                    <h3 className="title"> Current Challenge Ends:</h3><h6>  <Countdown date ={`${year}-07-08T00:00:00`} /></h6>
-            
-            
+                   
+                    <div id="navbuttons">
+                      <a className="waves-effect waves-light btn green white-text center-align " id="save">take a picture</a>
+                      <a className="waves-effect waves-light btn red white-text center-align " id="save">view my pictures</a>
+                    </div>
     
                <div className="main-container">
 

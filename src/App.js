@@ -7,9 +7,13 @@ import Join from "./components/pages/JoinTeam";
 import Create from "./components/pages/CreateTeam";
 import Play from "./components/pages/Play";
 import Nav from "./components/Nav";
+<<<<<<< HEAD
 import CurrentGames from "./components/pages/CurrentGames";
 import Wrapper from "./components/Wrapper/Wrapper"
 import Card from "./components/Card/Card";
+=======
+import Photos from "./components/pages/Photos";
+>>>>>>> dea70c1dad190e6f36b548d7f60fed7bfba77882
 import withAuthentication from './components/Session/withAuthentication';
 //import * as routes from '../../constants/routes';
 import Webcam from "./components/pages/camera2";
@@ -26,9 +30,14 @@ const App = () =>
       <Route exact path="/create" component={Create} />
       <Route exact path="/play" component={Play} />
       <Route exact path="/camera" component={Webcam} />
+<<<<<<< HEAD
       <Route exact path="/card" components={Card} />
       <Route exact path="/wrapper" components={Wrapper} />
       <Route exact path="/CurrentGames" components={CurrentGames} />
+=======
+      <Route exact path="/photos" component={Photos} />
+      
+>>>>>>> dea70c1dad190e6f36b548d7f60fed7bfba77882
     </div>
   </Router>;
 export default withAuthentication(App);
