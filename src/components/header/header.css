@@ -2,12 +2,14 @@
   .navbar {
     border-radius: 6px; 
     margin-bottom: 20px;
-    background: palegreen;
+    z-index:999999999;
+    
 }
 
 .Countdown{
-  margin: 10px auto;
+  margin: 50px auto;
   padding-bottom: 20px;
+  padding-top: 40px;
 }
 
 .Countdown-col{
