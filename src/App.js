@@ -7,6 +7,7 @@ import Join from "./components/pages/JoinTeam";
 import Create from "./components/pages/CreateTeam";
 import Play from "./components/pages/Play";
 import Nav from "./components/Nav";
+import Photos from "./components/pages/Photos";
 import withAuthentication from './components/Session/withAuthentication';
 //import * as routes from '../../constants/routes';
 import Webcam from "./components/pages/camera2";
@@ -23,7 +24,7 @@ const App = () =>
       <Route exact path="/create" component={Create} />
       <Route exact path="/play" component={Play} />
       <Route exact path="/camera" component={Webcam} />
-
+      <Route exact path="/photos" component={Photos} />
       
     </div>
   </Router>;
