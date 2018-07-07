@@ -78,6 +78,15 @@ p {
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
+.play{
+  position: absolute;
+  margin:-60px 0 0 -60px;
+  top: 41%;
+  left: 15%;
+}
+#navbuttons{
+  padding: 10%;
+}
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
