@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 //import "./Container.css";
 import { Link, withRouter } from 'react-router-dom';
 let teamnumber = Math.floor(Math.random() * 1000000000);
