@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CurrentGames from "./CurrentGames";
 class CurrentGames extends Component {
     
     render() {
@@ -12,3 +13,6 @@ class CurrentGames extends Component {
   }
   
   export default CurrentGames;
+
+
+  
