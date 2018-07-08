@@ -78,6 +78,22 @@ p {
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
+#first{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2%;
+  background: url("https://images-na.ssl-images-amazon.com/images/I/41rB4ufS47L._SX355_.jpg");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+}
+#second{
+  margin-top: 2%;
+  width: 200px;
+  height: 200px;
+  background: url("https://ae01.alicdn.com/kf/HTB118DRSFXXXXcqXpXXq6xXFXXXu/Christmas-Car-Decoration-Toy-Windows-Plush-Reindeer-Antlers-and-Red-Nose-Set-Home-Party-Decoration-Festive.jpg_640x640.jpg");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+}
 .play{
   position: absolute;
   margin:-60px 0 0 -60px;
