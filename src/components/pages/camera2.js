@@ -47,7 +47,6 @@ const style = {
   preview: {
     position: 'relative',
     width: '100%',
-   
     justifyContent: 'center',
     paddingTop: 100
   },
@@ -62,12 +61,11 @@ const style = {
   captureButton: {
     backgroundColor: '#fff',
     borderRadius: '50%',
-    height: 26,
-    width: 26,
+    height: 25,
+    width: 25,
     color: '#000',
     justifyContent: 'center',
-  
-    
+    marginleft: 100 
   },
   captureImage: {
     width: '100%',
