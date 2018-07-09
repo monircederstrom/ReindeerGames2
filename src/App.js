@@ -15,6 +15,7 @@ import withAuthentication from './components/Session/withAuthentication';
 //import * as routes from '../../constants/routes';
 import Webcam from "./components/pages/camera2";
 
+
 const App = () =>
   <Router>
     <div>
@@ -30,6 +31,7 @@ const App = () =>
       <Route exact path="/wrapper" components={Wrapper} />
       <Route exact path="/CurrentGames" components={CurrentGames} />
       <Route exact path="/photos" component={Photos} />
+    
       
     </div>
   </Router>;

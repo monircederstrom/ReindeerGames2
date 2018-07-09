@@ -6,5 +6,3 @@
 //which will set the countdowntimer
 //this needs a route
 //Test
-
-console.log("createButton page running");
