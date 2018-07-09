@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "user": "wkiddy",
+        "image": "../Lightning-McQueen-Reindeer.jpg",
+        "location": "The Street"
+    },
+    {
+        "id": 2,
+        "user": "wkiddy",
+        "image": "../Lightning-McQueen-Reindeer.jpg",
+        "location": "A Dealership"
+    }
+]

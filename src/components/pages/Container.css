@@ -78,6 +78,22 @@ p {
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
+#first{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2%;
+  background: url("./car1.jpeg");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+}
+#second{
+  margin-top: 2%;
+  width: 200px;
+  height: 200px;
+  background: url("./car2.jpeg");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+}
 .play{
   position: absolute;
   margin:-60px 0 0 -60px;
