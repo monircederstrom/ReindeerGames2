@@ -41,13 +41,13 @@ class Play extends Component {
                 <div className="play">
             
                    
-                    <h3 className="title white-text center-align"> Current Challenge Ends:</h3> 
-                    <h4 className=" white-text center-align">  <Countdown  date ={`${year}-07-08T00:00:00`} /></h4>
+                    <h2 className="title white-text center-align"> Current Challenge Ends:</h2> 
+                    <h5 className=" white-text center-align">  <Countdown  date ={`${year}-07-08T00:00:00`} /></h5>
                     <Header currentScore={this.state.currentScore} Time={this.state.time}/>  
                    
                     <div id="navbuttons">
-                      <a className="waves-effect waves-light btn green white-text center-align " id="save">take a picture</a>
-                      <a className="waves-effect waves-light btn red white-text center-align " id="save">view my pictures</a>
+                      <a href="/camera" className="waves-effect waves-light btn green white-text center-align " id="save">take a picture</a>
+                      <a href = "/photos" className="waves-effect waves-light btn red white-text center-align " id="save">view my pictures</a>
                     </div>
     
                <div className="main-container">

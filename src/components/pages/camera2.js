@@ -48,7 +48,7 @@ const style = {
     position: 'relative',
     width: '100%',
     justifyContent: 'center',
-    
+    paddingTop: 100
   },
   captureContainer: {
     display: 'flex',
@@ -61,12 +61,11 @@ const style = {
   captureButton: {
     backgroundColor: '#fff',
     borderRadius: '50%',
-    height: 26,
-    width: 26,
+    height: 25,
+    width: 25,
     color: '#000',
     justifyContent: 'center',
-    margin: 50,
-    
+    marginleft: 100 
   },
   captureImage: {
     width: '100%',
