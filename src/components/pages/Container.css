@@ -90,6 +90,13 @@ p {
 #navbuttons{
   padding: 10%;
 }
+
+.collection .collection-item.active {
+  background-color: #F7C243;
+  margin: 2%;
+
+
+}
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

@@ -26,7 +26,17 @@ class HomePage extends Component {
         <div className="col s12" id="home">
          
            
-              <h4 id="subhome">Your Current Games</h4>
+              <h4 id="subhome"></h4>
+        <div class="collection">
+         <h3 class = "collection-header center" > Your Current Games</h3>
+        <a href="#!" class="collection-item active">Pass the Antlers</a>
+        <a href="#!" class="collection-item active">Red Nose Wins</a>
+        <a href="#!" class="collection-item active">Santa in the Big City</a>
+        <a href="#!" class="collection-item active">Up on the Roof</a>
+      </div>
+            
+
+
               <CurrentGames />
               {/* { this.renderList() } */}
               <a href="/create" className="waves-effect waves-light btn" id="newuser">Create New Team</a>

@@ -24,5 +24,8 @@ const Card = props => (
     </span>
   </div>
 );
-
-  export default Card;
+<p>
+  Is this working? 
+  </p>
+  
+export default Card;
