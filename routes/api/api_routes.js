@@ -7,6 +7,7 @@ router
     res.send("Hello");
   });
 //route to add a new user document to the Users collection
+//postman test is good
 router
   .route("/user/newUser")
   .post(gamesController.newUser);
