@@ -2,38 +2,42 @@ import React, { Component } from 'react';
 import SignOutButton from './SignOut'
 import CurrentGames from "./CurrentGames";
 import "./Container.css";
+import axios from 'axios';
 
-class HomePage extends Component {
-//    state = {
-//      response: []
-//    }
-// //use axios here//
-//     componentDidMount(){
-//      fetch("/api/allGames").then( data => data.json() ).then((data) => {
-//        this.setState({
-//          response: data
-//        })
-//      })
-//     }
+ export default class HomePage extends Component {
+   state = {
+     response: []
+   }
+//use axios here//
+    componentDidMount(){
+     axios.get("http://localhost:3001/api/game/allGames")
+     .then( response => {
+       this.setState = ({response: response.data });
+       console.log(response);
+     })
+     .catch(function( error ) {
+       console.log(error);
+     })
+    }
 
-//     renderList = () => {
-//       console.log(this.state.response)
-//       return this.state.response.map(item => <div key={item.username}>{item.username}</div>)
-//     }
+    renderList = () => {
+      console.log(this.state.response)
+      return this.state.response.map(item => <p key={item}>{item}</p>)
+    }
     
     render() {
       return (
         <div className="col s12" id="home">
          
            
-              <h4 id="subhome"></h4>
+              {/* <h4 id="subhome"></h4>
         <div class="collection">
          <h3 class = "collection-header center" > Your Current Games</h3>
         <a href="/play" class="collection-item active">Pass the Antlers</a>
         <a href="/play" class="collection-item active">Red Nose Wins</a>
         <a href="/play" class="collection-item active">Santa in the Big City</a>
         <a href="/play" class="collection-item active">Up on the Roof</a>
-      </div>
+      </div> */}
             
 
 
@@ -42,6 +46,11 @@ class HomePage extends Component {
               <div className="col s12">
               <a href="/create" className="row waves-effect waves-light btn center " id="newuser">Create New Team</a>
               <a href="/join" className=" row waves-effect waves-light btn center" id="newuser">Join a Team</a>
+              <h4 id="subhome">Your Current Games</h4>
+              {/* <CurrentGames /> */}
+              {  this.renderList()  }
+              <a href="/create" className="waves-effect waves-light btn" id="newuser">Create a New Game</a>
+              <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
            
               <SignOutButton />
             < /div>
@@ -52,4 +61,3 @@ class HomePage extends Component {
     }
   }
   
-  export default HomePage;

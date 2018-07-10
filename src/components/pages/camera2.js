@@ -34,6 +34,7 @@ export default class Webcam extends Component {
           ref={(img) => {
             this.img = img;
           }}
+          alt = "Display"
         />
           <div id="navbuttons">
           <a className="waves-effect waves-light btn red white-text center-align " id="save">save this pic!</a>
