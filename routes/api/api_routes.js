@@ -1,11 +1,15 @@
 const router = require("express").Router();
 const gamesController = require("../../controllers/gamesController");
 
+// router
+//   .route("/test")
+//   .get((req, res) => {
+//     res.send("Hello");
+//   });
+
 router
-  .route("/test")
-  .get((req, res) => {
-    res.send("Hello");
-  });
+  .route("/game/allGames")
+  .get(gamesController.findAll);  
 //route to add a new user document to the Users collection
 //postman test is good for newUser route
 router
@@ -25,10 +29,10 @@ router
 
 
 // Route to display all games in which the user is a participant
-router
-  .route("/game/allGames")
-  .get(gamesController.findAllGames);
-  // .post(gamesController.create);
+// router
+//   .route("/game/allGames")
+//   .get(gamesController.findAllGames);
+//   // .post(gamesController.create);
 
 //route to display details of a specific game
 router
