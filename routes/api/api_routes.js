@@ -13,13 +13,14 @@ router
   .post(gamesController.newUser);
 
 //route to add a new game document to the Games collection
+//postman testg is good for newGame route
 router  
-  .route("game/newGame")
+  .route("/game/newGame")
   .post(gamesController.newGame);
 
 //route to add a new player to a game
 router
-  .route("game/newPlayer")
+  .route("/game/newPlayer")
   .post(gamesController.newPlayer);
 
 
@@ -36,12 +37,12 @@ router
 
 //this route updates score and photos
 router
-  .route("game/:id/score")
+  .route("/game/:id/score")
   .post(gamesController.updateScore);
 
 //route to delete game when game is over
 router
-  .route("game/removeGame")
+  .route("/game/removeGame")
   .post(gamesController.removeGame);
 
 
