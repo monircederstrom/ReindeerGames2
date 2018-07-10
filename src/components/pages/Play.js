@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {Days,Hours,Minutes,Seconds} from 'react-countdowntimer';
 import Header from "../header/header";
 import Countdown from './countdown.js';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 //import Game from './components/Game.js';
@@ -47,10 +47,9 @@ class Play extends Component {
                     <Header currentScore={this.state.currentScore} Time={this.state.time}/>  
                    
                     <div id="navbuttons">
-                      
-                      <Link to="/camera" className="waves-effect waves-light btn" id="login">Take a Pic!</Link>
-                      <Link to="/photos" className="waves-effect waves-light btn" id="login">View My Pics</Link>
-                      </div>
+                      <a className="waves-effect waves-light btn green white-text center-align " id="save">take a picture</a>
+                      <a className="waves-effect waves-light btn red white-text center-align " id="save">view my pictures</a>
+                    </div>
     
                <div className="main-container">
 
