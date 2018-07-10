@@ -4,22 +4,25 @@ import CurrentGames from "./CurrentGames";
 import "./Container.css";
 import axios from 'axios';
 
-class HomePage extends Component {
+ export default class HomePage extends Component {
    state = {
      response: []
    }
 //use axios here//
     componentDidMount(){
-     axios.get("/api/game/allGames").then( data => data.json() ).then((data) => {
-       this.setState({
-         response: data
-       })
+     axios.get("http://localhost:3001/api/game/allGames")
+     .then( response => {
+       this.setState = ({response: response.data });
+       console.log(response);
+     })
+     .catch(function( error ) {
+       console.log(error);
      })
     }
 
     renderList = () => {
       console.log(this.state.response)
-      return this.state.response.map(game => <div key={game.name}>{game.name}</div>)
+      return this.state.response.map(item => <div key={item.name}>{item.name}</div>)
     }
     
     render() {
@@ -42,4 +45,3 @@ class HomePage extends Component {
     }
   }
   
-  export default HomePage;
