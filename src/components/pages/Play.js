@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {Days,Hours,Minutes,Seconds} from 'react-countdowntimer';
 import Header from "../header/header";
 import Countdown from './countdown.js';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 
 //import Game from './components/Game.js';

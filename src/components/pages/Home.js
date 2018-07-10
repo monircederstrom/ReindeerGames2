@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import SignOutButton from './SignOut'
-import CurrentGames from "./CurrentGames";
+import TableRow from "./CurrentGames";
 import "./Container.css";
 import axios from 'axios';
+//import { WSAESTALE } from 'constants';
 
  export default class HomePage extends Component {
    state = {
@@ -20,9 +21,12 @@ import axios from 'axios';
      })
     }
 
-    renderList = () => {
+    tabRow = () => {
       console.log(this.state.response)
-      return this.state.response.map(item => <p key={item}>{item}</p>)
+      return this.state.response.map(function(object, i){
+        return <TableRow obj={object} key={i} />;
+      });
+        //item => <p key={item}>{item}</p>)
     }
     
     render() {
@@ -31,7 +35,16 @@ import axios from 'axios';
          
            
               <h4 id="subhome">Your Current Games</h4>
-              {/* <CurrentGames /> */}
+           <table> 
+            <thead>
+              <tr>
+                <td>Game Name</td>
+              </tr>
+            </thead>
+            <tbody>
+            {this.tabRow()}
+            </tbody>
+          </table>
               {  this.renderList()  }
               <a href="/create" className="waves-effect waves-light btn" id="newuser">Create a New Game</a>
               <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
