@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const gameSchema = new Schema({
   name: { type: String, required: true },
+  uniqueNum: {type: Number, min: 000000001, max: 999999999},
   players: [
     {
       user: { type: Schema.Types.ObjectId, ref: "User" },
