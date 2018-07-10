@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import {Days,Hours,Minutes,Seconds} from 'react-countdowntimer';
 import Header from "../header/header";
 import Countdown from './countdown.js';
+import { Link, withRouter } from 'react-router-dom';
 
 
 //import Game from './components/Game.js';
@@ -38,12 +39,28 @@ class Play extends Component {
         const currentDate = new Date();
         const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
              return (
+<<<<<<< HEAD
                 <div className="App">
+=======
+                <div className="play">
+>>>>>>> 17a50af161803fcce9845b2c1563125f599d0aa5
             
+                   
+                    <h3 className="title white-text center-align"> Current Challenge Ends:</h3> 
+                    <h4 className=" white-text center-align">  <Countdown  date ={`${year}-07-08T00:00:00`} /></h4>
                     <Header currentScore={this.state.currentScore} Time={this.state.time}/>  
+<<<<<<< HEAD
                     <h3 className="title"> Current Challenge Ends:</h3><h6>  <Countdown date ={`${year}-07-08T00:00:00`} /></h6>
             
                 </div> 
+=======
+                   
+                    <div id="navbuttons">
+                      
+                      <Link to="/camera" className="waves-effect waves-light btn" id="login">Take a Pic!</Link>
+                      <Link to="/photos" className="waves-effect waves-light btn" id="login">View My Pics</Link>
+                      </div>
+>>>>>>> 17a50af161803fcce9845b2c1563125f599d0aa5
     
         
                             );
