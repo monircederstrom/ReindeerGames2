@@ -1,25 +1,15 @@
   
   .navbar {
     border-radius: 6px; 
-<<<<<<< HEAD
-    margin-bottom: 80px;
-    background: palegreen;
-}
-
-.Countdown{
-  margin: 10px auto;
-  padding-bottom: 50px;
-=======
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     z-index:999999999;
     
 }
 
 .Countdown{
-  margin: 50px auto;
-  padding-bottom: 20px;
-  padding-top: 40px;
->>>>>>> 17a50af161803fcce9845b2c1563125f599d0aa5
+  margin: 10px auto;
+  padding-bottom: 10px;
+  padding-top: 0px;
 }
 
 .Countdown-col{
@@ -28,11 +18,11 @@
 
 .Countdown-col-element{
   display: inline-block;
-  margin: 0 200px;
+  margin: 0 75px;
   display: flex;
   flex-direction: column;
 }
 
 .Countdown-col-element strong{
-  font-size: 190px;
+  font-size: 50px;
 }

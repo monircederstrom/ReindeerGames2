@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
-import Container from "./Container.css";
-=======
 import SignInPage from "./SignIn";
 import "./Container.css";
->>>>>>> a31571a5dacebc77453b807546a6948beb88088f
 
 class Game extends Component {
     

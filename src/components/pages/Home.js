@@ -1,18 +1,8 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 0baa7f3f09261109c5c6cb639737415650a2d540
-=======
 import SignOutButton from './SignOut'
->>>>>>> 17a50af161803fcce9845b2c1563125f599d0aa5
 import CurrentGames from "./CurrentGames";
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 0baa7f3f09261109c5c6cb639737415650a2d540
 class HomePage extends Component {
 //    state = {
 //      response: []
@@ -45,30 +35,28 @@ class HomePage extends Component {
               <SignOutButton />
            
           
+ 
+ <div className="main-container">
+     <p>
+     Explanation of what Reindeer Games is...
+     </p>
+     <CurrentGames>
+   </CurrentGames>
+ 
+         
+ </div>
+ )
+
+
          
         </div>
       );
     }
   }
   
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   export default HomePage;
-=======
-  export default HomePage;
-=======
-const main = props => (
- 
-  <div className="main-container">{props.children}
-      <p>
-      Explanation of what Reindeer Games is...
-      </p>
-      <CurrentGames>
-    </CurrentGames>
-  
-          
-  </div>
-  )
+
 
 
   // nav bar 
@@ -92,9 +80,3 @@ const main = props => (
 // 
 
 
-  export default main;
-
->>>>>>> 0baa7f3f09261109c5c6cb639737415650a2d540
-=======
-  export default HomePage;
->>>>>>> 17a50af161803fcce9845b2c1563125f599d0aa5
