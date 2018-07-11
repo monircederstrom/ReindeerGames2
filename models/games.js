@@ -6,7 +6,7 @@ const gameSchema = new Schema({
   uniqueNum: {type: String },
   players: [
     {
-      user: { type: Schema.Types.ObjectId, ref: "User" },
+      user: { type: String, ref: "User" },
       score: { type: Number, default: 0 },
       photos: {}//something to do with GridFS, files, and chunks. is this doable?
     }
