@@ -15,7 +15,6 @@ const withAuthentication = (Component) =>
     }
 
     componentDidMount() {
-      console.log(firebase)
       firebase.auth.onAuthStateChanged(authUser => {
         authUser
           ? this.setState(() => ({ authUser }))
