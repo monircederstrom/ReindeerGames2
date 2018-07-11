@@ -27,7 +27,10 @@ p {
 #login {
   background: #F7C243;
   margin: 2%;
- 
+}
+#signoutbtn{
+  background: #F7C243;
+  margin: 2%;
 }
 #photodiv {
   width: 80%;

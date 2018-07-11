@@ -6,7 +6,7 @@ import * as routes from '../../constants/routes';
 
 const SignUpPage = ({ history }) =>
   <div>
-    <h1>SignUp</h1>
+  <br /> <br /> <br />
     <SignUpForm history={history} />
   </div>
 
@@ -117,8 +117,11 @@ const INITIAL_STATE = {
                 Sign Up!
                 <Link to="/Home"></Link>
                 </button>
+               
                 { error && <p>{error.message}</p> }
+                <br /> <br /> <br />
                 </form>
+                
       
     )
 

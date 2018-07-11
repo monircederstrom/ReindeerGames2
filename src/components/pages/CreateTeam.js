@@ -5,7 +5,7 @@ let teamnumber = Math.floor(Math.random() * 1000000000);
 
 
 const CreateTeam = props => (
-    <main className="createteamcontainer">{props.children} >
+    <main className="createteamcontainer">{props.children}
             
             <form className="col s12" id="form">
                 <div className="row">
@@ -15,7 +15,7 @@ const CreateTeam = props => (
                     </div>
                 </div>
                 <div className="row">
-                    <h4>Your unique team number is:  {teamnumber}</h4> 
+                    <h6>Your unique team number is:  {teamnumber}</h6> 
          
                     
                     <Link to="/home" className="waves-effect waves-light btn" id="login">Create My Team</Link>

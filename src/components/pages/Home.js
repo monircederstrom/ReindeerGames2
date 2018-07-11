@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SignOutButton from './SignOut'
 import "./Container.css";
 import axios from 'axios';
 import { Link } from "react-router-dom";
@@ -36,10 +35,6 @@ import { Link } from "react-router-dom";
               <a href="/create" className="waves-effect waves-light btn" id="newuser">Create a New Game</a>
               <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
         
-              <SignOutButton />
-           
-          
-         
         </div>
       );
     }
