@@ -1,15 +1,27 @@
-import React, { Component } from "react";
+import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 
-
-class JoinTeam extends Component {
-    render() {
-        return (
-            <div>
-                 <h1> Enter Team Name: </h1>
-
+const JoinTeam = props => (
+    <main className="createteamcontainer">{props.children} >
+            
+    <form className="col s12" id="form">
+        <div className="row">
+            <div className="input-field col s6">
+                <input id="input_team_name" type="text" className="validate" />
+                <label htmlFor="input_team_name">Team Name</label>
             </div>
-        );
-    }
-}
+        </div>
+        <div className="row">
+            <div className="input-field col s6">
+                <input id="team_number" type="text" className="validate" />
+                <label htmlFor="team_number">Unique 9 Digit Team Number</label>
+            </div>
+            
+            <Link to="/home" className="waves-effect waves-light btn" id="login">Create My Team</Link>
+           
+        </div>
+    </form>
 
-export default JoinTeam;
+</main>
+)
+export default withRouter(JoinTeam)

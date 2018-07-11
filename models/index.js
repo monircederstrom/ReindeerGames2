@@ -1,3 +1,4 @@
 module.exports = {
-  Book: require("./game")
+  Game: require("./games.js"),
+  User: require("./user.js")
 };

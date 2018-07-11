@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
 import SignOutButton from './SignOut'
-import CurrentGames from "./CurrentGames";
+
 import "./Container.css";
+import axios from 'axios';
+import { Link } from "react-router-dom";
 
-class HomePage extends Component {
-  //  state = {
-  //    response: []
-  //  }
+ export default class HomePage extends Component {
+   state = {
+     response: []
+   }
+//use axios here//
+  componentDidMount(){
+     axios.get("http://localhost:3001/api/game/allGames")
+      .then( response => {
+        this.setState({response: response.data});
+        console.log(response);
+      })
+      .catch(function( error ) {
+        console.log(error);
+      })
+    }
 
-  //   componentDidMount(){
-  //    fetch("/api/test").then( data => data.json() ).then((data) => {
-  //      this.setState({
-  //        response: data
-  //      })
-  //    })
-  //   }
-
-    // renderList = () => {
-    //   console.log(this.state.response)
-    //   return this.state.response.map(item => <div key={item.username}>{item.username}</div>)
-    // }
+    renderList = () => {
+      console.log(this.state.response);
+      return this.state.response.map(item => <Link className = "allGames" key={item.name} to={"/play/" + item.uniqueNum}>{item.name}</Link>)
+    }
     
     render() {
       return (
@@ -27,10 +32,10 @@ class HomePage extends Component {
          
            
               <h4 id="subhome">Your Current Games</h4>
-              <CurrentGames />
-              {/* { this.renderList() } */}
-              <a href="/create" className="waves-effect waves-light btn" id="newuser">Create New Team</a>
-              <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Team</a>
+              
+              {  this.renderList()  }
+              <a href="/create" className="waves-effect waves-light btn" id="newuser">Create a New Game</a>
+              <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
         
               <SignOutButton />
            
@@ -41,4 +46,3 @@ class HomePage extends Component {
     }
   }
   
-  export default HomePage;
