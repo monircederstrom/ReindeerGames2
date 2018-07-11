@@ -26,19 +26,20 @@ export default class Webcam extends Component {
           }}
         >
           <div style={style.captureContainer} onClick={this.takePicture}>
-            <div id="" style={style.captureButton} />
+            <div style={style.captureButton} />
           </div>
         </Camera>
+        <div>
         <img
           style={style.captureImage}
           ref={(img) => {
             this.img = img;
-          }}
-          alt = "Display"
+          }}    
         />
-          <div id="navbuttons">
+          <button style={style.savePicture}>
           <a className="waves-effect waves-light btn red white-text center-align " id="save">save this pic!</a>
-          </div>
+          </button>
+        </div>
       </div>
     );
   }
@@ -47,9 +48,7 @@ export default class Webcam extends Component {
 const style = {
   preview: {
     position: 'relative',
-    width: '100%',
-    justifyContent: 'center',
-    
+    paddingTop: 100
   },
   captureContainer: {
     display: 'flex',
@@ -57,19 +56,23 @@ const style = {
     justifyContent: 'center',
     zIndex: 1,
     bottom: 0,
-    width: '50%'
+    width: '100%'
   },
   captureButton: {
     backgroundColor: '#fff',
     borderRadius: '50%',
-    height: 26,
-    width: 26,
+    height: 25,
+    width: 25,
     color: '#000',
     justifyContent: 'center',
-    margin: 50,
-    
+    alignItems: 'center'
   },
   captureImage: {
     width: '100%',
+  },
+  savePicture :{
+    justifyContent: 'center',
+    alignItems:'center'
+
   }
 };

@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import {Days,Hours,Minutes,Seconds} from 'react-countdowntimer';
 import Header from "../header/header";
@@ -43,7 +42,7 @@ class Play extends Component {
             
                    
                     <h3 className="title white-text center-align"> Current Challenge Ends:</h3> 
-                    <h4 className=" white-text center-align">  <Countdown  date ={`${year}-07-08T00:00:00`} /></h4>
+                    <h4 className=" white-text center-align">  <Countdown  date ={`${year}-07-21T00:00:00`} /></h4>
                     <Header currentScore={this.state.currentScore} Time={this.state.time}/>  
                    
                     <div id="navbuttons">
@@ -88,4 +87,4 @@ class Play extends Component {
     
         
     export default Play;
-    //export default Game;
+ 
