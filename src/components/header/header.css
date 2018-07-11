@@ -8,8 +8,12 @@
 
 .Countdown{
   margin: 10px auto;
+<<<<<<< HEAD
   padding-bottom: 10px;
   padding-top: 0px;
+=======
+  padding-bottom: 20px;
+>>>>>>> 722c4d41b2649c7e29de40e76df759742a2b87f4
 }
 
 .Countdown-col{

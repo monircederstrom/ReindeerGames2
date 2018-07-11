@@ -43,7 +43,11 @@ class Play extends Component {
             
                    
                     <h3 className="title white-text center-align"> Current Challenge Ends:</h3> 
+<<<<<<< HEAD
                     <h4 className=" white-text center-align">  <Countdown  date ={`${year}-07-22T00:00:00`} /></h4>
+=======
+                    <h4 className=" white-text center-align">  <Countdown  date ={`${year}-07-21T00:00:00`} /></h4>
+>>>>>>> 722c4d41b2649c7e29de40e76df759742a2b87f4
                     <Header currentScore={this.state.currentScore} Time={this.state.time}/>  
                    
                     <div id="navbuttons">
@@ -58,5 +62,9 @@ class Play extends Component {
           
         
     export default Play;
+<<<<<<< HEAD
 
             
+=======
+    //export default Game;
+>>>>>>> 722c4d41b2649c7e29de40e76df759742a2b87f4

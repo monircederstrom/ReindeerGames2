@@ -4,6 +4,12 @@ const db = require("../models");
 module.exports = {
   //this query will pull games in which the user is playing
   //players.user: user UID
+  findAll: function (req, res) {
+    db.Game
+      .find(req.query)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err)); 
+  },
   findAllGames: function(req, res) {
     db.Game
       .find({ "players.user": req.query.UID })
