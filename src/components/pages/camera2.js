@@ -34,12 +34,7 @@ export default class Webcam extends Component {
           style={style.captureImage}
           ref={(img) => {
             this.img = img;
-<<<<<<< HEAD
           }}    
-=======
-          }}
-          alt = "Display"
->>>>>>> 722c4d41b2649c7e29de40e76df759742a2b87f4
         />
           <button style={style.savePicture}>
           <a className="waves-effect waves-light btn red white-text center-align " id="save">save this pic!</a>

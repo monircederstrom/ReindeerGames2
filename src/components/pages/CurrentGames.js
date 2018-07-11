@@ -35,7 +35,7 @@ class CurrentGames extends Component {
    return (
        <tr>
          <td>
-           {this.props.obj.name}
+           {this.props.obj}
          </td>
        </tr>
    );
