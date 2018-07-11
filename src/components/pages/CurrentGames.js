@@ -5,7 +5,7 @@ class TableRow extends Component {
    return (
        <tr>
          <td>
-           {this.props.obj.name}
+           {this.props.obj.data}
          </td>
        </tr>
    );

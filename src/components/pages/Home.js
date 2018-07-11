@@ -45,7 +45,7 @@ import axios from 'axios';
             {this.tabRow()}
             </tbody>
           </table>
-              {  this.renderList()  }
+           
               <a href="/create" className="waves-effect waves-light btn" id="newuser">Create a New Game</a>
               <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
         
