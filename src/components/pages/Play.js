@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import {Days,Hours,Minutes,Seconds} from 'react-countdowntimer';
 import Header from "../header/header";
@@ -89,4 +88,4 @@ class Play extends Component {
     
         
     export default Play;
-    //export default Game;
+ 

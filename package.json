@@ -6,8 +6,12 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "cloudinary": "^1.11.0",
 =======
+=======
+    "cloudinary-react": "^1.0.6",
+>>>>>>> b687fa287b24c9414133674a0a6ecddef5949898
     "concurrently": "^3.6.0",
     "cors": "^2.8.4",
 >>>>>>> chase-branch
