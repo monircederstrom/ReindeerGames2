@@ -11,14 +11,14 @@ const CreateTeam = props => (
                 <div className="row">
                     <div className="input-field col s6">
                         <input id="team_name" type="text" className="validate" />
-                        <label htmlFor="team_name">Team Name</label>
+                        <label htmlFor="team_name">Game Name</label>
                     </div>
                 </div>
                 <div className="row">
-                    <h4>Your unique team number is:  {teamnumber}</h4> 
+                    <h4>Your unique game number is:  {teamnumber}</h4> 
          
                     
-                    <Link to="/home" className="waves-effect waves-light btn" id="login">Create My Team</Link>
+                    <Link to="/home" className="waves-effect waves-light btn" id="login">Create My Game</Link>
                    
                 </div>
             </form>
