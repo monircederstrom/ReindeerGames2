@@ -26,7 +26,7 @@ export default class Webcam extends Component {
           }}
         >
           <div style={style.captureContainer} onClick={this.takePicture}>
-            <div style={style.captureButton} />
+            <div id="" style={style.captureButton} />
           </div>
         </Camera>
         <img
