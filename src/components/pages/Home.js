@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 
     renderList = () => {
       console.log(this.state.response);
-      return this.state.response.map(item => <Link key={item.name} to={"/play/" + item.uniqueNum}>{item.name}</Link>)
+      return this.state.response.map(item => <Link className = " allGames" key={item.name} to={"/play/" + item.uniqueNum}>{item.name}</Link>)
     }
     
     render() {
