@@ -8,10 +8,10 @@ Contributors:
 *  Wendy Kiddy
 
 Concept:
-  A year round seasonal game where users form teams and compete in a car scavenger hunt within a preset time span.
+A year round seasonal game where users form teams and compete in a car scavenger hunt within a preset time span.
 
 Research: 
-  Most scavenger hunt apps cost and are expensive. Also this can be used as team building activities or social engagement activity.
+Most scavenger hunt apps cost and are expensive. Also this can be used as team building activities or social engagement activity.
 
 Current Features:
 *  Login with Firebase Authentication
@@ -24,7 +24,6 @@ Features in Development:
 *  Points system for each picture
 *  Change scavenger hunt based on time of year
 *  Apple Pay - each player contributes $20 and final winner wins the pot
-
 
 Notable Technologies Used
 *  Axios
