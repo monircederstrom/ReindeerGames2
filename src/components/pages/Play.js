@@ -42,6 +42,16 @@ class Play extends Component {
                 <div className="play">
             
                    
+<<<<<<< HEAD
+                    <h2 className="title white-text center-align"> Current Challenge Ends:</h2> 
+                    <h5 className=" white-text center-align">  <Countdown  date ={`${year}-07-08T00:00:00`} /></h5>
+                    <Header currentScore={this.state.currentScore} Time={this.state.time}/>  
+                   
+                    <div id="navbuttons">
+                      <a href="/camera" className="waves-effect waves-light btn green white-text center-align " id="save">take a picture</a>
+                      <a href = "/photos" className="waves-effect waves-light btn red white-text center-align " id="save">view my pictures</a>
+                    </div>
+=======
                     <h3 className="title white-text center-align"> Current Challenge Ends:</h3> 
 <<<<<<< HEAD
                     <h4 className=" white-text center-align">  <Countdown  date ={`${year}-07-22T00:00:00`} /></h4>
@@ -55,8 +65,21 @@ class Play extends Component {
                       <Link to="/camera" className="waves-effect waves-light btn" id="login">Take a Pic!</Link>
                       <Link to="/photos" className="waves-effect waves-light btn" id="login">View My Pics</Link>
                       </div>
+<<<<<<< HEAD
             </div>
              )
+=======
+>>>>>>> 722c4d41b2649c7e29de40e76df759742a2b87f4
+    
+               <div className="main-container">
+
+
+                        </div>    
+                                </div> 
+        
+                            );
+                    }
+>>>>>>> 2ad53031e118204aedbeec8e72a98c14c40d9bf5
             }
           }
           
