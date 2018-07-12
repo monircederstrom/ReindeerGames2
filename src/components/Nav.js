@@ -18,7 +18,7 @@ const Nav = () => (
   <div id="navbar">
     <nav>
       <div className="nav-wrapper">
-        <a href="/Home" className="brand-logo">
+        <a href="/Home" className="brand-logo" id="brandlogo">
         <img className="material-icons" src="assets/images/largelogo1.png" alt="oopsies" height="35px" width="35px" /> Reindeer Games 
         </a>
         <div id="signoutdiv">

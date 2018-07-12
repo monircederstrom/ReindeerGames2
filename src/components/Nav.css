@@ -10,7 +10,12 @@ nav {
     z-index: 99;
     white-space: nowrap;
   }
-  
+  #brandlogo{
+    text-align: center;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .navbar ul {
     margin: 0;
     padding: 0;
