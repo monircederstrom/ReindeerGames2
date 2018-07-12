@@ -15,7 +15,7 @@ let teamnumber = Math.floor(Math.random() * 1000000000);
 // }
 
 const CreateTeam = props => (
-    <main className="createteamcontainer">{props.children} >
+    <main className="createteamcontainer">{props.children}
             
             <form className="col s12" id="form">
                 <div className="row">

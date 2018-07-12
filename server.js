@@ -7,7 +7,7 @@ const cloudinary = require("cloudinary");
 const cors = require("cors");
 
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3003;
 
 // Define middleware here
 app.use(cors());
