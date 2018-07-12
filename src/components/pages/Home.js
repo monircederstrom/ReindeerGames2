@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import SignOutButton from './SignOut'
-
 import "./Container.css";
 import axios from 'axios';
 import { Link } from "react-router-dom";
