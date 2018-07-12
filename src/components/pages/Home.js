@@ -30,31 +30,25 @@ import { Link } from "react-router-dom";
       return (
         <div className="col s12" id="home">
          
-           
-              <h4 id="subhome"></h4>
+
+
+    <h4 id="subhome"></h4>
         <div class="collection">
          <h3 class = "collection-header center" > Your Current Games</h3>
         <a href="/play" class="collection-item active">Pass the Antlers</a>
         <a href="/play" class="collection-item active">Red Nose Wins</a>
         <a href="/play" class="collection-item active">Santa in the Big City</a>
         <a href="/play" class="collection-item active">Up on the Roof</a>
-      </div>
-            
+      </div>    
 
-
-              <CurrentGames />
-              {/* { this.renderList() } */}
-              <div className="col s12">
-              <a href="/create" className="row waves-effect waves-light btn center " id="newuser">Create New Team</a>
-              <a href="/join" className=" row waves-effect waves-light btn center" id="newuser">Join a Team</a>
-              <h4 id="subhome">Your Current Games</h4>
+           
                {/* <CurrentGames />  */}
               {  this.renderList()  }
               <a href="/create" className="waves-effect waves-light btn" id="newuser">Create a New Game</a>
               <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
-           
+        
               <SignOutButton />
-            < /div>
+           
           
          
         </div>
