@@ -3,7 +3,11 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
+<<<<<<< HEAD
+const cloudinary = require("cloudinary");
+=======
 const cors = require("cors");
+>>>>>>> chase-branch
 
 //Wendy added Morgan to track database input
 const logger = require("morgan");
@@ -23,6 +27,13 @@ app.use(bodyParser.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+//config for cloudinary API
+cloudinary.config({
+  cloud_name: 'dfjsgnnzp',
+  api_key: "441855517495859",
+  api_secret: "dHXbMO5tjow1JRq1aHS855kg0a4"
+});
 
 // Add routes, both API and view
 app.use(routes);

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SignOutButton from './SignOut'
-import CurrentGames from "./CurrentGames";
+
 import "./Container.css";
 import axios from 'axios';
 import { Link } from "react-router-dom";
@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 
     renderList = () => {
       console.log(this.state.response);
-      return this.state.response.map(item => <Link className = " allGames" key={item.name} to={"/play/" + item.uniqueNum}>{item.name}</Link>)
+      return this.state.response.map(item => <Link className = "allGames" key={item.name} to={"/play/" + item.uniqueNum}>{item.name}</Link>)
     }
     
     render() {
@@ -42,7 +42,12 @@ import { Link } from "react-router-dom";
       </div>    
 
            
+<<<<<<< HEAD
                {/* <CurrentGames />  */}
+=======
+              <h4 id="subhome">Your Current Games</h4>
+              
+>>>>>>> ddc931e5309b8e16980086c0104629383419fe7f
               {  this.renderList()  }
               <a href="/create" className="waves-effect waves-light btn" id="newuser">Create a New Game</a>
               <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
