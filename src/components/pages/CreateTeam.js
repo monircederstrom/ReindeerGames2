@@ -1,8 +1,18 @@
 import React from 'react';
 //import "./Container.css";
 import { Link, withRouter } from 'react-router-dom';
+import axios from 'axios';
 let teamnumber = Math.floor(Math.random() * 1000000000);
 
+// createGame = () => {
+//     axios.post("http://localhost:3001/api/game/allGames")
+//         .then(res => {
+//             //need game name from input.val() #teamname
+//             //need uniqueNum from {teamnumber}
+//             console.log(res);
+//             console.log(res.data);
+//         })
+// }
 
 const CreateTeam = props => (
     <main className="createteamcontainer">{props.children}
@@ -11,14 +21,16 @@ const CreateTeam = props => (
                 <div className="row">
                     <div className="input-field col s6">
                         <input id="team_name" type="text" className="validate" />
-                        <label htmlFor="team_name">Team Name</label>
+                        <label htmlFor="team_name">Game Name</label>
+                        {/* <input id='creator' type='text' className='creator' />
+                        <label htmlFor='gameCreator'>Game Creator</label> */}
                     </div>
                 </div>
                 <div className="row">
-                    <h6>Your unique team number is:  {teamnumber}</h6> 
+                    <h4>Your unique game number is:  {teamnumber}</h4> 
          
                     
-                    <Link to="/home" className="waves-effect waves-light btn" id="login">Create My Team</Link>
+                    {/* <Link onClick={createGame()} to="/home" className="waves-effect waves-light btn" id="login">Create My Gam</Link> */}
                    
                 </div>
             </form>
