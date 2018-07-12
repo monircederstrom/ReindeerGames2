@@ -9,6 +9,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
 #form {
   width: 80%;
   margin-left: auto;
@@ -26,7 +27,10 @@ p {
 #login {
   background: #F7C243;
   margin: 2%;
- 
+}
+#signoutbtn{
+  background: #F7C243;
+  margin: 2%;
 }
 #photodiv {
   width: 80%;
