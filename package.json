@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "cloudinary": "^1.11.0",
     "cloudinary-react": "^1.0.6",
     "concurrently": "^3.6.0",
     "cors": "^2.8.4",
@@ -14,7 +15,7 @@
     "jslib-html5-camera-photo": "^2.0.0-beta.0",
     "mongojs": "^2.6.0",
     "mongoose": "^5.2.0",
-    "nodemon": "^1.17.5",
+    "nodemon": "^1.18.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-camera": "^0.1.3",
