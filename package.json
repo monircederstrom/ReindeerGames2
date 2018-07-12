@@ -1,58 +1,35 @@
 {
-  "name": "reindeer",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.3",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "cloudinary": "^1.11.0",
-=======
-=======
-    "cloudinary-react": "^1.0.6",
->>>>>>> b687fa287b24c9414133674a0a6ecddef5949898
-    "concurrently": "^3.6.0",
-    "cors": "^2.8.4",
->>>>>>> chase-branch
-    "express": "^4.16.3",
-    "firebase": "^5.2.0",
-    "if-env": "^1.0.4",
-    "jslib-html5-camera-photo": "^2.0.0-beta.0",
-    "mongojs": "^2.6.0",
-    "mongoose": "^5.2.0",
-    "morgan": "^1.9.0",
-    "nodemon": "^1.17.5",
-    "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-<<<<<<< HEAD
-<<<<<<< HEAD:package.json
-=======
->>>>>>> chase-branch
-    "react-camera": "^0.1.3",
-    "react-countdowntimer": "^0.1.8",
-    "react-dom": "^16.4.1",
-    "react-dom-camera": "^0.3.2",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-<<<<<<< HEAD
-    "yarn": "^1.7.0",
-    "react-webcam": "^1.0.1"
-=======
-    "react-countdowntimer": "^0.1.8",
-    "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
->>>>>>> chase-branch:reindeer/package.json
-=======
-    "react-webcam": "^1.0.1",
-    "yarn": "^1.7.0"
->>>>>>> chase-branch
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "name": "reindeer",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "axios": "^0.18.0",
+        "body-parser": "^1.18.3",
+        "cloudinary-react": "^1.0.6",
+        "concurrently": "^3.6.0",
+        "cors": "^2.8.4",
+        "express": "^4.16.3",
+        "firebase": "^5.2.0",
+        "if-env": "^1.0.4",
+        "jslib-html5-camera-photo": "^2.0.0-beta.0",
+        "mongojs": "^2.6.0",
+        "mongoose": "^5.2.0",
+        "nodemon": "^1.17.5",
+        "prop-types": "^15.6.2",
+        "react": "^16.4.1",
+        "react-camera": "^0.1.3",
+        "react-countdowntimer": "^0.1.8",
+        "react-dom": "^16.4.1",
+        "react-dom-camera": "^0.3.2",
+        "react-router-dom": "^4.3.1",
+        "react-scripts": "1.1.4",
+        "react-webcam": "^1.0.1",
+        "yarn": "^1.7.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
 }
