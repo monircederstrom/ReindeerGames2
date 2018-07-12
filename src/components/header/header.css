@@ -1,7 +1,7 @@
   
   .navbar {
     border-radius: 6px; 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     z-index:999999999;
     
 }
@@ -17,7 +17,7 @@
 
 .Countdown-col-element{
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 75px;
   display: flex;
   flex-direction: column;
 }
