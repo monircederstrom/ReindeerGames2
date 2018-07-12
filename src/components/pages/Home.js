@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
    }
 //use axios here//
   componentDidMount(){
-     axios.get("http://localhost:3001/api/game/allGames")
+     axios.get("http://localhost:3003/api/game/allGames")
       .then( response => {
         this.setState({response: response.data});
         console.log(response);
