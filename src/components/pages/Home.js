@@ -41,13 +41,6 @@ import { Link } from "react-router-dom";
         <a href="/play" class="collection-item active">Up on the Roof</a>
       </div>    
 
-           
-<<<<<<< HEAD
-               {/* <CurrentGames />  */}
-=======
-              <h4 id="subhome">Your Current Games</h4>
-              
->>>>>>> ddc931e5309b8e16980086c0104629383419fe7f
               {  this.renderList()  }
               <a href="/create" className="waves-effect waves-light btn" id="newuser">Create a New Game</a>
               <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
