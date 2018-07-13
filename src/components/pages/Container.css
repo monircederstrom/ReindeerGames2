@@ -2,9 +2,6 @@
   position: absolute;
   top: 50%;
 }
-h4{
-  font-size: 12px;
-}
 p {
   color: black;
   margin-top: 30%;
@@ -81,7 +78,7 @@ p {
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
-#first{
+/* #first{
   width: 200px;
   height: 200px;
   margin-bottom: 2%;
@@ -96,10 +93,10 @@ p {
   background: url("./car2.jpeg");
   background-size: 200px 200px;
   background-repeat: no-repeat;
-}
+} */
 .play{
   position: absolute;
-  margin:-70px 0 0 -60px;
+  margin:-60px 0 0 -60px;
   top: 41%;
   left: 15%;
 }
@@ -107,11 +104,8 @@ p {
   padding: 10%;
 }
 
-.collection .collection-item.active {
-  background-color: #F7C243;
-  margin: 2%;
-
-
+.collection .collection-item.active{
+  background: #F7C243;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
