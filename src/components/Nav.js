@@ -2,14 +2,16 @@ import React from "react";
 import SignOutButton from './pages/SignOut';
 import "./Nav.css";
 import AuthUserContext from './Session/AuthUserContext';
-import * as routes from '../constants/routes';
+//import * as routes from '../constants/routes';
 
 const Navigation = () =>
+
   <AuthUserContext.Consumer>
     {authUser => authUser
       ? <Nav />
       : <NavigationNonAuth />
     }
+  
   </AuthUserContext.Consumer>
 
 

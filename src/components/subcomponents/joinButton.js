@@ -4,3 +4,21 @@
 //this is done as an mongoose ajax call 
 //should automacially insert the creator of the game as the first player
 //need a route for this
+
+$("button").click(function (e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "/pages/test/",
+        data: {
+            id: $(this).val(), // < note use of 'this' here
+            access_token: $("#access_token").val()
+        },
+        success: function (result) {
+            alert('ok');
+        },
+        error: function (result) {
+            alert('error');
+        }
+    });
+});

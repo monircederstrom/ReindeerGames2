@@ -1,6 +1,6 @@
 import React from 'react';
 import { auth } from '../../firebase/index';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const SignOutButton = () =>
 
 <Link to="/">

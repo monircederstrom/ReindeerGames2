@@ -1,0 +1,52 @@
+#first {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2%;
+    background: url("./car4.jpeg");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+}
+
+#second {
+    margin-top: 2%;
+    width: 200px;
+    height: 200px;
+    background: url("./truck1.jpeg");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+}
+
+#third {
+    margin-top: 2%;
+    width: 200px;
+    height: 200px;
+    background: url("./car3.jpeg");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+}
+
+#fourth{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2%;
+    background: url("./truck2.jpeg");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+}
+
+#fifth {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2%;
+    background: url("./car5.jpeg");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+}
+#sixth{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2%;
+    background: url("./car6.jpg");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+}

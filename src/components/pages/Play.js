@@ -71,4 +71,3 @@ class Play extends Component {
         }
         
     export default Play;
-
