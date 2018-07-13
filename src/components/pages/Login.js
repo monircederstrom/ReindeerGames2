@@ -9,7 +9,7 @@ class Game extends Component {
         <div>
           <main className="container">
             <p>
-            Explanation of what Reindeer Games is...
+            Mobile Scavenger Hunt App 
             </p>
 
             <img className="movingcar" src="assets/images/largelogo1.png" alt="Smiley face" />
