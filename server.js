@@ -3,11 +3,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
-<<<<<<< HEAD
-const cloudinary = require("cloudinary");
-=======
 const cors = require("cors");
->>>>>>> chase-branch
 
 
 const PORT = process.env.PORT || 3001;
@@ -23,11 +19,11 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //config for cloudinary API
-cloudinary.config({
-  cloud_name: 'dfjsgnnzp',
-  api_key: "441855517495859",
-  api_secret: "dHXbMO5tjow1JRq1aHS855kg0a4"
-});
+// cloudinary.config({
+//   cloud_name: 'dfjsgnnzp',
+//   api_key: "441855517495859",
+//   api_secret: "dHXbMO5tjow1JRq1aHS855kg0a4"
+// });
 
 // Add routes, both API and view
 app.use(routes);
