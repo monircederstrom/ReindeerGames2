@@ -15,10 +15,7 @@ const withAuthentication = (Component) =>
     }
 
     componentDidMount() {
-<<<<<<< HEAD
-=======
      
->>>>>>> 44b8bc25db2f407e158f6cea783b4191663b383e
       firebase.auth.onAuthStateChanged(authUser => {
         authUser
           ? this.setState(() => ({ authUser }))
