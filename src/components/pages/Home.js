@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 //use axios here//
   componentDidMount(){
 
-     axios.get("/server.js/api/game/allGames")
+     axios.get("/server/api/game/allGames")
 
       .then( response => {
         this.setState({response: response.data});
