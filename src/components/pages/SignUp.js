@@ -49,9 +49,10 @@ const INITIAL_STATE = {
           db.doCreateUser(authUser.user.uid, username, email)
             .then(() => {
               this.setState(() => ({ ...INITIAL_STATE }));
-             
+            
             history.push(routes.HOME);
             })
+            
             .catch(error => {
               this.setState(updateByPropertyName('error', error));
             });
@@ -63,7 +64,7 @@ const INITIAL_STATE = {
   
       event.preventDefault();
     }
-
+  
    
   
     render() {

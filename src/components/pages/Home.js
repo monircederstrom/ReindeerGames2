@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
    }
 //use axios here//
   componentDidMount(){
-     axios.get("http://localhost:3001/api/game/allGames")
+     axios.get("/api/game/allGames")
       .then( response => {
         this.setState({response: response.data});
         console.log(response);
@@ -21,7 +21,8 @@ import { Link } from "react-router-dom";
 
     renderList = () => {
       console.log(this.state.response);
-      return this.state.response.map(item => <Link className = "allGames" key={item.name} to={"/play/" + item.uniqueNum}>{item.name}</Link>)
+      return this.state.response.map(item => <Link className="allGames" key={item.name} to={"/play/" + item.uniqueNum}>{item.name}
+      <br /></Link>)
     }
     
     render() {
