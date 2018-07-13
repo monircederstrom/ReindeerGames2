@@ -46,10 +46,6 @@ import { Link } from "react-router-dom";
               {  this.renderList()  }
               <a href="/create" className="waves-effect waves-light btn" id="newuser">Create a New Game</a>
               <a href="/join" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
-<<<<<<< HEAD
-=======
-   
->>>>>>> b497d476f24e954c82d3c4e37851c236892ea1c6
         </div>
       );
     }
