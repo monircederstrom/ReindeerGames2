@@ -6,8 +6,14 @@ const app = express();
 const cloudinary = require("cloudinary");
 const cors = require("cors");
 
+//Wendy added Morgan to track database input
+const logger = require("morgan");
 
 const PORT = process.env.PORT || 3003;
+
+
+//Wendy added Morgan to track database input
+app.use(logger("dev"));
 
 // Define middleware here
 app.use(cors());
