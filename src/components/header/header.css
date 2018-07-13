@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   .navbar {
     position: top;
     border-radius: 2px;
@@ -25,3 +26,34 @@
   .Countdown-col-element {
     font-size: 20px;
   }
+=======
+
+  .navbar {
+    position: top;
+    border-radius: 2px; 
+    margin-bottom: 2px;
+    z-index:999999999;
+    
+}
+
+.Countdown{
+  margin: 5px auto;
+  padding-bottom: 1px;
+}
+
+.Countdown-col{
+  display: inline-flex;
+  margin: 2px;
+}
+
+.Countdown-col-element{
+  display: inline-block;
+  margin:  0 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Countdown-col-element {
+  font-size: 20px;
+}
+>>>>>>> 43fb928067b104aadf7857d2dc54372b5b23496e

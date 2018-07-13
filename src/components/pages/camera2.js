@@ -31,6 +31,7 @@ export default class Webcam extends Component {
         </Camera>
         <div>
         <img
+          alt=""
           style={style.captureImage}
           ref={(img) => {
             this.img = img;

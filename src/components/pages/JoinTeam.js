@@ -17,7 +17,7 @@ const JoinTeam = props => (
                 <label htmlFor="team_number">Unique 9 Digit Team Number</label>
             </div>
             
-            <Link to="/home" className="waves-effect waves-light btn" id="login">Create My Team</Link>
+            <Link to="/home" className="waves-effect waves-light btn" id="login">Join Team</Link>
            
         </div>
     </form>

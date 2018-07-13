@@ -9,7 +9,7 @@ const cors = require("cors");
 //Wendy added Morgan to track database input
 const logger = require("morgan");
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3003;
 
 
 //Wendy added Morgan to track database input
