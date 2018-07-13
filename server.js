@@ -3,11 +3,8 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
-<<<<<<< HEAD
 const cloudinary = require("cloudinary");
-=======
 const cors = require("cors");
->>>>>>> chase-branch
 
 //Wendy added Morgan to track database input
 const logger = require("morgan");

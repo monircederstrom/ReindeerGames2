@@ -11,6 +11,7 @@ import Photos from "./components/pages/Photos";
 import withAuthentication from './components/Session/withAuthentication';
 //import * as routes from '../../constants/routes';
 import Webcam from "./components/pages/camera2";
+import DropPhotos from "./components/pages/dropPhoto";
 
 
 const App = () =>
@@ -25,6 +26,8 @@ const App = () =>
       <Route exact path="/play" component={Play} />
       <Route exact path="/camera" component={Webcam} />
       <Route exact path="/photos" component={Photos} />
+      <Route exact path="/dropPhoto" component={DropPhotos}/>
+      
     </div>
   </Router>;
 export default withAuthentication(App);
