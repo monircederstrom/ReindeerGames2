@@ -6,7 +6,7 @@ import * as routes from '../../constants/routes';
 
 const SignUpPage = ({ history }) =>
   <div>
-    <h1>SignUp</h1>
+  <br /> <br /> <br />
     <SignUpForm history={history} />
   </div>
 
@@ -49,9 +49,10 @@ const INITIAL_STATE = {
           db.doCreateUser(authUser.user.uid, username, email)
             .then(() => {
               this.setState(() => ({ ...INITIAL_STATE }));
-             
+            
             history.push(routes.HOME);
             })
+            
             .catch(error => {
               this.setState(updateByPropertyName('error', error));
             });
@@ -63,7 +64,7 @@ const INITIAL_STATE = {
   
       event.preventDefault();
     }
-
+  
    
   
     render() {
@@ -117,8 +118,11 @@ const INITIAL_STATE = {
                 Sign Up!
                 <Link to="/Home"></Link>
                 </button>
+               
                 { error && <p>{error.message}</p> }
+                <br /> <br /> <br />
                 </form>
+                
       
     )
 
