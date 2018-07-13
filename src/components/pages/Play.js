@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Days,Hours,Minutes,Seconds} from 'react-countdowntimer';
 import Header from "../header/header";
 import Countdown from './countdown.js';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 //import Game from './components/Game.js';
@@ -47,12 +47,44 @@ class Play extends Component {
 
                    
                     <div id="navbuttons">
-                      
-                      <Link to="/camera" className="waves-effect waves-light btn" id="login">Take a Pic!</Link>
+                    <Link to="/camera" className="waves-effect waves-light btn" id="login">Take a Pic!</Link>
                       <Link to="/photos" className="waves-effect waves-light btn" id="login">View My Pics</Link>
+                    </div>
+    
+               <div className="main-container">
+
+
+                        </div>    
+                                </div> 
+        
+                            );
+                    }
+            }
+          
+            //class Game extends Component {
+        
+              //  render() {
+                //  return (
+                  //  <div>
+                    //  <Nav />
+                    
+                      //<Container>
+                    
+                     // </Container>
+                      
+                   // </div>
+                  //);
+               // }
+             // }
+              
                       </div>
 
+<<<<<<< HEAD
                        <div className="main-container">
+=======
+
+           <div className="main-container">
+>>>>>>> d3298f47378be746bbef7270e2de21dfbbb9e1be
 
                <button onClick={this.IncrementItem}>Up Vote</button>
         <button onClick={this.DecreaseItem}>Down Vote</button>
