@@ -68,3 +68,4 @@ export default class DropPhotos extends React.Component {
       )
     }
   }
+  //lkhj
