@@ -49,7 +49,9 @@ class Play extends Component {
                     <div id="navbuttons">
                       
                       <Link to="/camera" className="waves-effect waves-light btn" id="login">Take a Pic!</Link>
+                      <Link to="/dropPhoto" className="waves-effect waves-light btn" id="login">Drop a Pic from Device</Link>
                       <Link to="/photos" className="waves-effect waves-light btn" id="login">View My Pics</Link>
+                      
                       </div>
 
                        <div className="main-container">
