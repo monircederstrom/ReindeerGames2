@@ -23,12 +23,7 @@ nav {
     padding: 0;
   }
 
-  .navbar li {
-    display: inline-block;
-    
-    width: 33.3%;
-    text-align: left;
-  }
+ 
   
   .navbar a {
     text-decoration: none;
