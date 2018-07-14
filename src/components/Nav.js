@@ -1,5 +1,5 @@
 import React from "react";
-import SignOutButton from './pages/SignOut';
+//import SignOutButton from './pages/SignOut';
 import "./Nav.css";
 import AuthUserContext from './Session/AuthUserContext';
 //import * as routes from '../constants/routes';
@@ -23,9 +23,7 @@ const Nav = () => (
         <a href="/Home" className="brand-logo" id="brandlogo">
         <img className="material-icons" src="assets/images/largelogo1.png" alt="oopsies" height="35px" width="35px" /> Reindeer Games 
         </a>
-        <div id="signoutdiv">
-        <SignOutButton />
-        </div>
+        
       </div>
     
     </nav>
