@@ -2,6 +2,7 @@ import React from 'react';
 import Dropzone from 'react-dropzone';
 import request from 'superagent';
 import './dropPhoto.css';
+import { Link } from "react-router-dom";
 
 
 
@@ -64,6 +65,7 @@ export default class DropPhotos extends React.Component {
               <img className="droppedPhoto" src={this.state.uploadedFileCloudinaryUrl} />
             </div>}
           </div>
+        <a href="/play" className="waves-effect waves-light btn" id="newuser">Back</a>
         </form>
       )
     }
