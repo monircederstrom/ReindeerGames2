@@ -10,6 +10,10 @@ nav {
     z-index: 99;
     white-space: nowrap;
   }
+.nav-wrapper{
+    width: 60%;
+    margin-left: -7%;
+  }
   #brandlogo{
     text-align: center;
     width: 30%;
