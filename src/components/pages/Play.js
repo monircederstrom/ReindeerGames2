@@ -56,8 +56,7 @@ class Play extends Component {
 
                        <div className="main-container">
 
-               <button onClick={this.IncrementItem}>Up Vote</button>
-        <button onClick={this.DecreaseItem}>Down Vote</button>
+               
        
         { this.state.show ? <h2>{ this.state.clicks }</h2> : '' }
       </div>
