@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Camera from 'react-camera';
+import { Link } from "react-router-dom";
 
 export default class Webcam extends Component {
 
@@ -41,6 +42,7 @@ export default class Webcam extends Component {
           <a className="waves-effect waves-light btn red white-text center-align " id="save">save this pic!</a>
           </button>
         </div>
+        <a href="/play" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
       </div>
     );
   }
