@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Container.css";
 import "./photos/photos.css";
+import SignOutButton from './pages/SignOut';
 const Photos = props => (
     <main className="createteamcontainer">
          <div className="col s12" id="photodiv">    
@@ -15,7 +16,7 @@ const Photos = props => (
             
             <Link to="/play" className="waves-effect waves-light btn" id="login">Back</Link>
          </div>
-   
+        <SignOutButton />
     </main>
 )
 export default Photos;
