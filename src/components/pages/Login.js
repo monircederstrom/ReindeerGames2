@@ -8,9 +8,9 @@ class Game extends Component {
       return (
         <div>
           <main className="container">
-            <p>
+            <h6>
             Mobile Scavenger Hunt App 
-            </p>
+            </h6>
 
             <img className="movingcar" src="assets/images/largelogo1.png" alt="Smiley face" />
             <div id="loginchoice">
