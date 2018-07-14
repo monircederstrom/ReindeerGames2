@@ -3,6 +3,12 @@
   position: absolute;
   top: 50%;
 }
+h6 {
+  color: white;
+  margin-top: 30%;
+  margin-left: 45%;
+}
+
 p {
   color: black;
   margin-top: 30%;
