@@ -42,7 +42,7 @@ export default class Webcam extends Component {
           <a className="waves-effect waves-light btn red white-text center-align " id="save">save this pic!</a>
           </button>
         </div>
-        <a href="/play" className="waves-effect waves-light btn" id="newuser">Join a Game</a>
+        <a href="/play" className="waves-effect waves-light btn" id="newuser">Back</a>
       </div>
     );
   }
