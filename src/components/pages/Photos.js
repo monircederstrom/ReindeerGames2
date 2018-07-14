@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Container.css";
 import "./photos/photos.css";
-import SignOutButton from './pages/SignOut';
+import SignOutButton from './SignOut';
 const Photos = props => (
     <main className="createteamcontainer">
          <div className="col s12" id="photodiv">    
