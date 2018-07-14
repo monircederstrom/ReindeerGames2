@@ -9,9 +9,10 @@ nav {
     font-size: calc(10px + (24 - 10) * (100vw - 320px) / (1200 - 400));
     z-index: 99;
     white-space: nowrap;
+   
   }
   #brandlogo{
-    text-align: center;
+   
     width: 30%;
     margin-left: 0;
     margin-right: auto;
